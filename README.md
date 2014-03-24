@@ -11,7 +11,7 @@ Included features:
 However, this is just my command line environment setup.
 
 For the full package, you should also install my 
-[`vim setup`](https://github.com/codelucas/vimrc) for file editing and 
+[vim setup](https://github.com/codelucas/vimrc) for file editing and 
 my [base-line shell scripts](https://github.com/codelucas/base_scripts) 
 for monitoring processes and etc.
 
