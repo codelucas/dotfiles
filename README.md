@@ -1,5 +1,7 @@
 This repository contains basic bash environment settings
 for my personal LAMP servers. Works on OSX also. 
+Note that if you are using OSX, use the `.osx_bashrc` file and 
+rename it to `.bashrc`
 
 Included features:
 ------------------
