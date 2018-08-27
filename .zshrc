@@ -248,6 +248,7 @@ alias sopen=smart_file_open
 alias srpull=git_pull_remote
 alias clear_git="git checkout -- ."
 alias d="git diff"
+alias da="git diff master..HEAD"
 alias d0="git diff HEAD"
 alias d1="git diff HEAD^"
 alias ccc="git checkout -- ."
