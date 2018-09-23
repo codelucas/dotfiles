@@ -13,6 +13,7 @@ Highlights:
 - Uniform theme: solarized file and directory colors.
     * Please also see my [VIM configs here](https://github.com/codelucas/vimrc) to get VIM to be in a similar setting.
 - Beautiful command prompt, you may change the format
+- Beautiful OSX TextMate inspired Sublime 3 theme. I customized the syntax colors to be readable and easy on the eyes.
 - And many many more.. :) 
 
 
@@ -31,7 +32,14 @@ Installation:
 - *(OSX specific instructions)* Finally to make sure the OSX terminal colors are proper, use my custom solarized terminal colors here:
     * Open up either of the `.terminal` theme files in the osx-pallets folder provided and run it. Then open terminal preferences.
       Solarized Dark should be a profile option. Select it and set as default. Ensure that the terminals are declared as **xterm-256color**
-
+- Finally, install the Sublime 3 color schemes.
+    * Make sure you install [Package Control](https://packagecontrol.io/installation)
+    * Use package control to install PackageResourceViewer
+    * Install the 3024 light and Soda Light 3 themes if not already installed
+    * CMD + Shift + p => UI: Select Theme => Soda Light 3
+    * CMD + Shift + p => UI: Select Color Scheme => 3024 Day
+    * Copy in the provided 3024 Day.tmTheme file provided in this repo into its proper location, find via PackageResourceViewer
+    * Copy the provided Preferences.sublime-settings file into the proper location under settings via CMD + ,
 
 If your directory and other files do not display colors for the `ls` command,
 make sure `dircolors` is installed with `sudo apt-get install dircolors`.

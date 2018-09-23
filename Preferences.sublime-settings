@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/3024 Color Scheme/3024 Day.tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Soda Light 3.sublime-theme",
+	"vintageous_use_ctrl_keys": true,
+	"trim_trailing_white_space_on_save": true
+}
+
