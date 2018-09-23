@@ -112,7 +112,7 @@ git_clear_local_branches() {
   echo "Press enter to continue ..";
   read;
   git checkout master;
-  git branch | grep -v "master" | xargs git branch -D;
+  git --no-pager branch | grep -v "master" | xargs git branch -D;
 }
 
 git_delete() {
@@ -124,11 +124,11 @@ git_delete() {
 git_smart_switch_or_create_branch() {
   if [ $# -eq 0 ]; then
     # sfeature with no args lists all branches
-    git branch;
+    git --no-pager branch;
     return;
   fi
 
-  if [ `git branch --list $1` ]; then
+  if [ `git --no-pager branch --list $1` ]; then
     echo "Switching to existing branch '$1'";
     git checkout "$1";
   else
@@ -140,11 +140,11 @@ git_smart_switch_or_create_branch() {
     git checkout -b "$1";
   fi
   echo "Directory of existing branches:";
-  git branch;
+  git --no-pager branch;
 }
 
 git_smart_pull() {
-  old_branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p');
+  old_branch=$(git --no-pager branch | sed -n -e 's/^\* \(.*\)/\1/p');
 
   if [ $# -eq 0 ]; then
     echo "Checking out master";
