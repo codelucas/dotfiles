@@ -23,7 +23,8 @@ export GREP_OPTIONS='--color=always'
 export GREP_COLOR='01;31'
 
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+# if on M1 macbook, uncomment:
+# export PATH=/opt/homebrew/bin:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -264,7 +265,8 @@ alias ggrep="git grep --break --heading --line-number $1 -- $2"
 # ################################################
 
 # Enable color support of ls
-# MUST CREATE ~/.dircolors from https://github.com/codelucas/dotfiles/blob/master/.dircolors
+# Create ~/.dircolors from https://github.com/codelucas/dotfiles/blob/master/.dircolors
+# if on M1 macbook, replace "/usr/local/bin/" with "/opt/homebrew/bin/"
 if [ -x /usr/local/bin/$dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
