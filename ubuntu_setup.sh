@@ -5,6 +5,7 @@ sudo apt-get install -y coreutils
 
 sudo apt-get install mercurial
 sudo apt-get install mosh
+sudo apt-get install tmux
 
 sudo apt install python3-pip
 sudo pip install flake8
