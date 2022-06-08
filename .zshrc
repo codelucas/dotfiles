@@ -7,7 +7,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git hg osx sublime pip)
+plugins=(git mercurial macos sublime pip)
 
 source $ZSH/oh-my-zsh.sh
 

@@ -3,3 +3,5 @@
 [user]
     name = Lucas Ou-Yang
     email = lucasyangpersonal@gmail.com
+[credential "https://github.com"]
+	username = codelucas
