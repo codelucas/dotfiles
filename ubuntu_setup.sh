@@ -9,5 +9,3 @@ sudo apt-get install tmux
 
 sudo apt install python3-pip
 sudo pip install flake8
-
-
