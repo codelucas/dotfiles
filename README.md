@@ -3,30 +3,22 @@ optimized for OSX and Ubuntu environments. I don't recommend replicating this se
 other operating systems.
 
 
-Highlights:
------------
-- We use zshrc, install zsh with [this link](https://github.com/robbyrussell/oh-my-zsh)
-    * Wonder what zsh is or how it compares with vanilla bash? See [this link](http://stackabuse.com/zsh-vs-bash/).
-- Highly efficient custom bash & zsh scripts created by me after years of industry work.
-    * Located in `.zshrc`
-    * Have features such as filename search, fast and colored grep, git wrapper optimizations, git tree visualizations.
-- Uniform theme: solarized file and directory colors.
-    * Please also see my [VIM configs here](https://github.com/codelucas/vimrc) to get VIM to be in a similar setting.
-- Beautiful command prompt, you may change the format
-- Beautiful OSX TextMate inspired Sublime 3 theme. I customized the syntax colors to be readable and easy on the eyes.
-- And many many more.. :) 
-
-
 Installation:
 -------------
-- [Install zshrc](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
+- Install zsh (needed before next step)
+    * `sudo apt install zsh`
+    * https://www.tecmint.com/install-zsh-in-ubuntu/
+- [Install oh-my-zshrc](https://github.com/robbyrussell/oh-my-zsh#basic-installation)
     * `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` or
         `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+- Run command to install ubuntu packages (mosh, pip, hg, flake8)
+    * `./ubuntu_setup.sh`
 - Install dircolors because my setup relies on that to display colors properly
     * Run `brew install coreutils`, which installs dircolors among other things
 - Move all dot scripts to their proper locations:
     * `cp /path/to/repo/dotfiles/.zshrc ~/.zshrc`
     * `cp /path/to/repo/dotfiles/.dircolors ~/.dircolors`
+    * `cp /path/to/repo/dotfiles/.gitconfig ~/.gitconfig`
 - Set zsh as your default shell
     * `chsh -s /bin/zsh`
 - *(OSX specific instructions)* Finally to make sure the OSX terminal colors are proper, use my custom solarized terminal colors here:
